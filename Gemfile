@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'devise'
-gem 'omniauth-gitbook', path: '/Users/Apple/Dropbox/Web/ruby/omniauth-gitbook'
+gem 'omniauth-gitbook'
 gem 'omniauth-github'
 
 group :development, :test do
