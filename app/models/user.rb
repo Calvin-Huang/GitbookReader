@@ -13,4 +13,12 @@ class User < ApplicationRecord
 
     user
   end
+
+  def email_required?
+    false
+  end
+
+  def email_changed?
+    false
+  end
 end
