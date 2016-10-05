@@ -1,8 +1,10 @@
 PATH
-  remote: /Users/Apple/Dropbox/Web/ruby/omniauth-gitbook
+  remote: /Users/Apple/Dropbox/Web/ruby/gitbook-api
   specs:
-    omniauth-gitbook (0.0.3)
+    gitbook-api (0.0.1)
+      nokogiri (~> 1.0)
       omniauth (~> 1.0)
+      omniauth-gitbook (>= 1.0.0, < 2.0)
       omniauth-oauth2 (>= 1.1.1, < 2.0)
 
 GEM
@@ -110,9 +112,9 @@ GEM
     omniauth (1.3.1)
       hashie (>= 1.2, < 4)
       rack (>= 1.0, < 3)
-    omniauth-github (1.1.2)
+    omniauth-gitbook (1.0.0)
       omniauth (~> 1.0)
-      omniauth-oauth2 (~> 1.1)
+      omniauth-oauth2 (>= 1.1.1, < 2.0)
     omniauth-oauth2 (1.4.0)
       oauth2 (~> 1.0)
       omniauth (~> 1.2)
@@ -199,11 +201,11 @@ DEPENDENCIES
   byebug
   coffee-rails (~> 4.2)
   devise
+  gitbook-api!
   jbuilder (~> 2.5)
   jquery-rails
   listen (~> 3.0.5)
-  omniauth-gitbook!
-  omniauth-github
+  omniauth-gitbook
   puma (~> 3.0)
   rails (~> 5.0.0)
   sass-rails (~> 5.0)

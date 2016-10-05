@@ -32,7 +32,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'devise'
 gem 'omniauth-gitbook'
-gem 'omniauth-github'
+gem 'gitbook-api', path: '/Users/Apple/Dropbox/Web/ruby/gitbook-api'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
