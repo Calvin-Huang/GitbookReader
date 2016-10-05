@@ -4,7 +4,7 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
     user = User.find_or_create_by_uid(request.env['omniauth.auth'].uid)
 
     # Update user data
-    user.update_columns!({
+    user.update_columns({
       username: auth_info.username,
       name: auth_info.name,
       avatar_url: auth_info.urls.avatar,
