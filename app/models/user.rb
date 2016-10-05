@@ -6,8 +6,11 @@ class User < ApplicationRecord
          :omniauthable
 
   def self.find_or_create_by_uid(uid)
-    super(uid)
+    user = User.find_or_create_by :uid, uid
 
-    write_attribute(:password, Devise.friendly_token[0, 20])
+    user.password = Devise.friendly_token[0, 20]
+    user.save!
+
+    user
   end
 end
